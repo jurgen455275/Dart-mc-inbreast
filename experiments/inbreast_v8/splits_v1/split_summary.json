@@ -1,0 +1,466 @@
+{
+  "split_version": "inbreast_nested_grouped_v1",
+  "seed": 20261105,
+  "restarts": 2000,
+  "group_identifier": "subject_surrogate",
+  "group_identifier_warning": "Token repetido del nombre DICOM; no validado como PatientID.",
+  "images": 327,
+  "groups": 87,
+  "positive": 258,
+  "negative": 69,
+  "outer_assignment_score": 0.05827031613630382,
+  "outer_folds": [
+    {
+      "fold": 0,
+      "images": 66,
+      "groups": 18,
+      "positive": 52,
+      "negative": 14,
+      "cc": 33,
+      "mlo": 33,
+      "cluster_only": 0,
+      "acr": {
+        "1": 24,
+        "2": 22,
+        "3": 14,
+        "4": 6
+      }
+    },
+    {
+      "fold": 1,
+      "images": 64,
+      "groups": 18,
+      "positive": 50,
+      "negative": 14,
+      "cc": 32,
+      "mlo": 32,
+      "cluster_only": 2,
+      "acr": {
+        "1": 22,
+        "2": 23,
+        "3": 14,
+        "4": 4
+      }
+    },
+    {
+      "fold": 2,
+      "images": 64,
+      "groups": 17,
+      "positive": 50,
+      "negative": 14,
+      "cc": 32,
+      "mlo": 32,
+      "cluster_only": 0,
+      "acr": {
+        "1": 24,
+        "2": 22,
+        "3": 12,
+        "4": 6
+      }
+    },
+    {
+      "fold": 3,
+      "images": 66,
+      "groups": 17,
+      "positive": 52,
+      "negative": 14,
+      "cc": 33,
+      "mlo": 33,
+      "cluster_only": 0,
+      "acr": {
+        "1": 22,
+        "2": 24,
+        "3": 16,
+        "4": 4
+      }
+    },
+    {
+      "fold": 4,
+      "images": 67,
+      "groups": 17,
+      "positive": 54,
+      "negative": 13,
+      "cc": 32,
+      "mlo": 35,
+      "cluster_only": 0,
+      "acr": {
+        "1": 22,
+        "2": 23,
+        "3": 16,
+        "4": 6
+      }
+    }
+  ],
+  "inner_by_outer": {
+    "0": {
+      "assignment_score": 0.06801808899496403,
+      "folds": [
+        {
+          "fold": 0,
+          "images": 66,
+          "groups": 18,
+          "positive": 53,
+          "negative": 13,
+          "cc": 32,
+          "mlo": 34,
+          "cluster_only": 2,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 16,
+            "4": 4
+          }
+        },
+        {
+          "fold": 1,
+          "images": 64,
+          "groups": 17,
+          "positive": 50,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 23,
+            "3": 12,
+            "4": 6
+          }
+        },
+        {
+          "fold": 2,
+          "images": 64,
+          "groups": 17,
+          "positive": 49,
+          "negative": 15,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 24,
+            "3": 14,
+            "4": 4
+          }
+        },
+        {
+          "fold": 3,
+          "images": 67,
+          "groups": 17,
+          "positive": 54,
+          "negative": 13,
+          "cc": 33,
+          "mlo": 34,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 23,
+            "3": 16,
+            "4": 6
+          }
+        }
+      ]
+    },
+    "1": {
+      "assignment_score": 0.004705775322157113,
+      "folds": [
+        {
+          "fold": 0,
+          "images": 66,
+          "groups": 17,
+          "positive": 53,
+          "negative": 13,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 26,
+            "3": 12,
+            "4": 4
+          }
+        },
+        {
+          "fold": 1,
+          "images": 65,
+          "groups": 17,
+          "positive": 51,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 23,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 2,
+          "images": 66,
+          "groups": 18,
+          "positive": 52,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 34,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 20,
+            "3": 16,
+            "4": 6
+          }
+        },
+        {
+          "fold": 3,
+          "images": 66,
+          "groups": 17,
+          "positive": 52,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 22,
+            "3": 16,
+            "4": 6
+          }
+        }
+      ]
+    },
+    "2": {
+      "assignment_score": 0.06773648715915989,
+      "folds": [
+        {
+          "fold": 0,
+          "images": 66,
+          "groups": 18,
+          "positive": 51,
+          "negative": 15,
+          "cc": 32,
+          "mlo": 34,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 24,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 1,
+          "images": 66,
+          "groups": 18,
+          "positive": 52,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 2,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 16,
+            "4": 4
+          }
+        },
+        {
+          "fold": 2,
+          "images": 64,
+          "groups": 17,
+          "positive": 50,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 0,
+          "acr": {
+            "1": 20,
+            "2": 23,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 3,
+          "images": 67,
+          "groups": 17,
+          "positive": 55,
+          "negative": 12,
+          "cc": 33,
+          "mlo": 34,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 23,
+            "3": 16,
+            "4": 4
+          }
+        }
+      ]
+    },
+    "3": {
+      "assignment_score": 0.06710941539156155,
+      "folds": [
+        {
+          "fold": 0,
+          "images": 66,
+          "groups": 18,
+          "positive": 52,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 24,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 1,
+          "images": 67,
+          "groups": 17,
+          "positive": 53,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 34,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 16,
+            "4": 4
+          }
+        },
+        {
+          "fold": 2,
+          "images": 64,
+          "groups": 18,
+          "positive": 52,
+          "negative": 12,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 2,
+          "acr": {
+            "1": 22,
+            "2": 22,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 3,
+          "images": 64,
+          "groups": 17,
+          "positive": 49,
+          "negative": 15,
+          "cc": 31,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 12,
+            "4": 6
+          }
+        }
+      ]
+    },
+    "4": {
+      "assignment_score": 0.06763951958342886,
+      "folds": [
+        {
+          "fold": 0,
+          "images": 64,
+          "groups": 18,
+          "positive": 50,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 2,
+          "acr": {
+            "1": 22,
+            "2": 23,
+            "3": 14,
+            "4": 4
+          }
+        },
+        {
+          "fold": 1,
+          "images": 66,
+          "groups": 18,
+          "positive": 52,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 14,
+            "4": 6
+          }
+        },
+        {
+          "fold": 2,
+          "images": 64,
+          "groups": 17,
+          "positive": 50,
+          "negative": 14,
+          "cc": 32,
+          "mlo": 32,
+          "cluster_only": 0,
+          "acr": {
+            "1": 22,
+            "2": 24,
+            "3": 12,
+            "4": 6
+          }
+        },
+        {
+          "fold": 3,
+          "images": 66,
+          "groups": 17,
+          "positive": 52,
+          "negative": 14,
+          "cc": 33,
+          "mlo": 33,
+          "cluster_only": 0,
+          "acr": {
+            "1": 24,
+            "2": 22,
+            "3": 16,
+            "4": 4
+          }
+        }
+      ]
+    }
+  },
+  "leakage_checks": [
+    {
+      "outer_fold": 0,
+      "overlap_groups": 0
+    },
+    {
+      "outer_fold": 1,
+      "overlap_groups": 0
+    },
+    {
+      "outer_fold": 2,
+      "overlap_groups": 0
+    },
+    {
+      "outer_fold": 3,
+      "overlap_groups": 0
+    },
+    {
+      "outer_fold": 4,
+      "overlap_groups": 0
+    }
+  ],
+  "ground_truth_sha256": "1b98cdd506fc4cc57fd7b5076ea073ff66a47dff0cd12676bbabb421976649d2",
+  "nested_folds_sha256": "db583b0cb19441b896d45297019d04aa9dee5ea6557b294ae11ba53569e52e65",
+  "subject_groups_sha256": "a4eed308ea807f7e8a8b7084b4a7ec342d785cb1ad58f3f85a4ee1e14886fe3f"
+}

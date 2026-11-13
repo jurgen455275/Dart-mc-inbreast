@@ -1,0 +1,589 @@
+{
+  "experiment_id": "INB-H010-THRESHOLD-COMP01",
+  "status": "completed",
+  "images": 327,
+  "positives": 258,
+  "negatives": 69,
+  "patient_identity_available": false,
+  "patient_level_validation_claimed": false,
+  "grouping_field": "subject_surrogate",
+  "grouping_limitation": "not a verified PatientID; patient-level validation is not claimed",
+  "threshold_formula_invariant": "T=min(0.95,mean_M(D)+20*std_M(D)); D>T",
+  "dart_reproduction_mismatches_vs_h009": 0,
+  "method_metrics": [
+    {
+      "mode": 0,
+      "method": "DART-MC",
+      "tp": 179,
+      "tn": 57,
+      "fp": 12,
+      "fn": 79,
+      "sensitivity": 0.6937984496124031,
+      "specificity": 0.8260869565217391,
+      "balanced_accuracy": 0.7599427030670711,
+      "accuracy": 0.7217125382262997,
+      "precision": 0.93717277486911,
+      "npv": 0.41911764705882354,
+      "f1": 0.7973273942093542,
+      "mcc": 0.4303837714246537
+    },
+    {
+      "mode": 3,
+      "method": "Fixed D 0.15",
+      "tp": 204,
+      "tn": 53,
+      "fp": 16,
+      "fn": 54,
+      "sensitivity": 0.7906976744186046,
+      "specificity": 0.7681159420289855,
+      "balanced_accuracy": 0.779406808223795,
+      "accuracy": 0.7859327217125383,
+      "precision": 0.9272727272727272,
+      "npv": 0.4953271028037383,
+      "f1": 0.8535564853556485,
+      "mcc": 0.48595734314357963
+    },
+    {
+      "mode": 10,
+      "method": "Otsu",
+      "tp": 208,
+      "tn": 44,
+      "fp": 25,
+      "fn": 50,
+      "sensitivity": 0.8062015503875969,
+      "specificity": 0.6376811594202898,
+      "balanced_accuracy": 0.7219413549039433,
+      "accuracy": 0.7706422018348624,
+      "precision": 0.8927038626609443,
+      "npv": 0.46808510638297873,
+      "f1": 0.8472505091649695,
+      "mcc": 0.4001849388070599
+    },
+    {
+      "mode": 15,
+      "method": "Percentile 0.9999",
+      "tp": 203,
+      "tn": 56,
+      "fp": 13,
+      "fn": 55,
+      "sensitivity": 0.7868217054263565,
+      "specificity": 0.8115942028985508,
+      "balanced_accuracy": 0.7992079541624537,
+      "accuracy": 0.7920489296636085,
+      "precision": 0.9398148148148148,
+      "npv": 0.5045045045045045,
+      "f1": 0.8565400843881856,
+      "mcc": 0.5156430442241755
+    },
+    {
+      "mode": 24,
+      "method": "Niblack local",
+      "tp": 198,
+      "tn": 56,
+      "fp": 13,
+      "fn": 60,
+      "sensitivity": 0.7674418604651163,
+      "specificity": 0.8115942028985508,
+      "balanced_accuracy": 0.7895180316818335,
+      "accuracy": 0.7767584097859327,
+      "precision": 0.9383886255924171,
+      "npv": 0.4827586206896552,
+      "f1": 0.8443496801705757,
+      "mcc": 0.4938212668401593
+    },
+    {
+      "mode": 25,
+      "method": "Sauvola local",
+      "tp": 206,
+      "tn": 54,
+      "fp": 15,
+      "fn": 52,
+      "sensitivity": 0.7984496124031008,
+      "specificity": 0.782608695652174,
+      "balanced_accuracy": 0.7905291540276373,
+      "accuracy": 0.7951070336391437,
+      "precision": 0.9321266968325792,
+      "npv": 0.5094339622641509,
+      "f1": 0.860125260960334,
+      "mcc": 0.5065298505305664
+    },
+    {
+      "mode": 26,
+      "method": "Kapur entropy",
+      "tp": 219,
+      "tn": 54,
+      "fp": 15,
+      "fn": 39,
+      "sensitivity": 0.8488372093023255,
+      "specificity": 0.782608695652174,
+      "balanced_accuracy": 0.8157229524772498,
+      "accuracy": 0.8348623853211009,
+      "precision": 0.9358974358974359,
+      "npv": 0.5806451612903226,
+      "f1": 0.8902439024390244,
+      "mcc": 0.5711118171853667
+    },
+    {
+      "mode": 27,
+      "method": "Kittler-Illingworth",
+      "tp": 206,
+      "tn": 53,
+      "fp": 16,
+      "fn": 52,
+      "sensitivity": 0.7984496124031008,
+      "specificity": 0.7681159420289855,
+      "balanced_accuracy": 0.7832827772160431,
+      "accuracy": 0.7920489296636085,
+      "precision": 0.9279279279279279,
+      "npv": 0.5047619047619047,
+      "f1": 0.8583333333333333,
+      "mcc": 0.4951233734687161
+    },
+    {
+      "mode": 28,
+      "method": "Ridler-Calvard",
+      "tp": 221,
+      "tn": 46,
+      "fp": 23,
+      "fn": 37,
+      "sensitivity": 0.8565891472868217,
+      "specificity": 0.6666666666666666,
+      "balanced_accuracy": 0.7616279069767442,
+      "accuracy": 0.8165137614678899,
+      "precision": 0.9057377049180327,
+      "npv": 0.5542168674698795,
+      "f1": 0.8804780876494024,
+      "mcc": 0.49058526695821775
+    }
+  ],
+  "dart_metrics": {
+    "mode": 0,
+    "method": "DART-MC",
+    "tp": 179,
+    "tn": 57,
+    "fp": 12,
+    "fn": 79,
+    "sensitivity": 0.6937984496124031,
+    "specificity": 0.8260869565217391,
+    "balanced_accuracy": 0.7599427030670711,
+    "accuracy": 0.7217125382262997,
+    "precision": 0.93717277486911,
+    "npv": 0.41911764705882354,
+    "f1": 0.7973273942093542,
+    "mcc": 0.4303837714246537
+  },
+  "inference": {
+    "3": {
+      "comparator": "Fixed D 0.15",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.0968992248062015,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.16071816770186334,
+            -0.03396066517428846
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.05797101449275366,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.019240196078431412,
+            0.1285829493087557
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.01946410515672392,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.06560359722012882,
+            0.02593689984515246
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.056229091146294374,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.10226585916739739,
+            -0.014920774227626532
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.05557357171892591,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.13373649425977488,
+            0.02700769660681351
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 14,
+        "a_wrong_b_correct": 35,
+        "discordant": 49,
+        "two_sided_exact_p": 0.003801654409748778
+      }
+    },
+    "10": {
+      "comparator": "Otsu",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.11240310077519378,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.180675757387826,
+            -0.047966436835683135
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.18840579710144933,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            0.09371394230769231,
+            0.2891645529486365
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": 0.038001348163127835,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.013879839754699568,
+            0.09375443205260452
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.0499231149556153,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.09725393673400826,
+            -0.005274031917015005
+          ]
+        },
+        "mcc": {
+          "observed_difference": 0.030198832617593818,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.06223797726736363,
+            0.12689405763346567
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 25,
+        "a_wrong_b_correct": 41,
+        "discordant": 66,
+        "two_sided_exact_p": 0.06401750413722565
+      }
+    },
+    "15": {
+      "comparator": "Percentile 0.9999",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.09302325581395343,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.1575133372851215,
+            -0.03383458646616544
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.01449275362318836,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.07900071123755326,
+            0.10256410256410264
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.03926525109538259,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.08863848407925502,
+            0.010689606795083881
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.05921269017883146,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.10506795500134714,
+            -0.020434448191397468
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.08525927279952178,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.16394151646634822,
+            -0.00033524163571294524
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 16,
+        "a_wrong_b_correct": 39,
+        "discordant": 55,
+        "two_sided_exact_p": 0.0026672623828598026
+      }
+    },
+    "24": {
+      "comparator": "Niblack local",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.0736434108527132,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.14288833437305057,
+            -0.00790436027512378
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.01449275362318836,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.06060606060606055,
+            0.0888888888888888
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.02957532861476242,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.07569951771859923,
+            0.01671489215122003
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.04702228596122149,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.09590838332805171,
+            -0.0036192903486635414
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.06343749541550558,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.1456535020871895,
+            0.01646614179307931
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 20,
+        "a_wrong_b_correct": 38,
+        "discordant": 58,
+        "two_sided_exact_p": 0.024746035842440804
+      }
+    },
+    "25": {
+      "comparator": "Sauvola local",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.10465116279069764,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.16792837284167397,
+            -0.04427637291078791
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.04347826086956519,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.03389830508474578,
+            0.11236306179775284
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.030586450960566225,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.07903598271400651,
+            0.01714520890815093
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.06279786675097987,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.11168485590132879,
+            -0.019962576307463627
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.0761460791059127,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.15714042978437376,
+            0.007007373320216954
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 13,
+        "a_wrong_b_correct": 37,
+        "discordant": 50,
+        "two_sided_exact_p": 0.000936222910851825
+      }
+    },
+    "26": {
+      "comparator": "Kapur entropy",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.15503875968992242,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.222637705258782,
+            -0.09488666922781408
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.04347826086956519,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.015886026541764298,
+            0.11115023474178387
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.05578024941017867,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.09789503102003111,
+            -0.012765728860193936
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.09291650822967024,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.14418193641978969,
+            -0.05123909836448978
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.14072804576071302,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.21897488488535696,
+            -0.06211688561174453
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 7,
+        "a_wrong_b_correct": 44,
+        "discordant": 51,
+        "two_sided_exact_p": 1.2115257419509362e-07
+      }
+    },
+    "27": {
+      "comparator": "Kittler-Illingworth",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.10465116279069764,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.17518326158837108,
+            -0.03982501367080702
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.05797101449275366,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.039999999999999925,
+            0.15497790665561975
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.02334007414897199,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.08041511080905635,
+            0.03221840582824035
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.061005939123979114,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.11225489174831532,
+            -0.018470806369473403
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.06473960204406237,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.1627437689949068,
+            0.02983430114769888
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 18,
+        "a_wrong_b_correct": 41,
+        "discordant": 59,
+        "two_sided_exact_p": 0.0037937056353716074
+      }
+    },
+    "28": {
+      "comparator": "Ridler-Calvard",
+      "dart_minus_comparator": {
+        "sensitivity": {
+          "observed_difference": -0.16279069767441856,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.22891566265060248,
+            -0.10169160487288133
+          ]
+        },
+        "specificity": {
+          "observed_difference": 0.1594202898550725,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            0.046875,
+            0.26318814277071967
+          ]
+        },
+        "balanced_accuracy": {
+          "observed_difference": -0.001685203909673083,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.06609354119006096,
+            0.05842092127399017
+          ]
+        },
+        "f1": {
+          "observed_difference": -0.08315069344004822,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.13327119795766296,
+            -0.03922031604491544
+          ]
+        },
+        "mcc": {
+          "observed_difference": -0.06020149553356402,
+          "subject_surrogate_cluster_bootstrap_ci95": [
+            -0.1672384171774376,
+            0.044870287743147226
+          ]
+        }
+      },
+      "mcnemar_all_images": {
+        "a_correct_b_wrong": 15,
+        "a_wrong_b_correct": 46,
+        "discordant": 61,
+        "two_sided_exact_p": 8.837556327558756e-05
+      }
+    }
+  },
+  "frozen_model": {
+    "status": "frozen_for_future_external_validation",
+    "family": "simplified_9",
+    "features": [
+      "adaptive_threshold",
+      "raw_density_log",
+      "accepted_density_log",
+      "score_max",
+      "contrast_max",
+      "dog_max",
+      "cluster_count_log",
+      "accept_fraction",
+      "evidence_max"
+    ],
+    "regularization": 0.01,
+    "decision_threshold": 0.4269318643609573,
+    "selection_oof_metrics": {
+      "tp": 213,
+      "tn": 52,
+      "fp": 17,
+      "fn": 45,
+      "sensitivity": 0.8255813953488372,
+      "specificity": 0.7536231884057971,
+      "balanced_accuracy": 0.7896022918773171,
+      "accuracy": 0.8103975535168195,
+      "precision": 0.9260869565217391,
+      "npv": 0.5360824742268041,
+      "f1": 0.8729508196721312,
+      "mcc": 0.5173882997911977
+    }
+  },
+  "interpretation": "Internal method comparison only. No clinical, patient-level, or external generalization claim is permitted.",
+  "artifacts_sha256": {
+    "config": "ec212dba10038f584fd2f5350a8db311c8c1b894a2b0064a84a649d3998bea2d",
+    "features": "571a30a0fbfb1c9635c167c94c2c67669e548b4e13eed6e04d833aa148fd82c6",
+    "splits": "db583b0cb19441b896d45297019d04aa9dee5ea6557b294ae11ba53569e52e65",
+    "h009": "9c8cb67963745a99d76183161282405d4bef3955bf80889bbe5b296f0b7442f2",
+    "predictions_long": "046a2d6a354a43e027ebad548964bffc15dd0ed0edee5cd42c311c23289cc4ed",
+    "predictions_wide": "f3676f2799a0974ed3d9bd17f9c1a35b885abbe9e67717546d3c3d3c27517a56",
+    "metrics": "01962b5950d0b7ee4a85d6bd88e269f8ebb8a6053773d70eb50f0f2139930555",
+    "selection": "82c75b8e83e60d1a0592e24f30d2fa588c73dad524c6b320ddea092f77d1e017",
+    "selected_models": "df86897e4cbdc5e4c203544951464009987f2f33d92b21ab613699e2432688eb",
+    "frozen_model": "28ca9f91887017d201c79e597155e74c3a50f8b4343735d541e554ec5f1d664a"
+  }
+}

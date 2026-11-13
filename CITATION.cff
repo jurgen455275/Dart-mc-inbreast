@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite this repository and the associated manuscript."
+title: "DART-MC: reproducible H010 evaluation package"
+type: software
+authors:
+  - family-names: "Villalobos Murillo"
+    given-names: "Johnny"
+    email: "johnny.villalobos.murillo@una.ac.cr"
+    affiliation: "Universidad Nacional de Costa Rica"
+  - family-names: "Herrera Alfaro"
+    given-names: "Jurgen"
+    email: "jurgen.herrera.alfaro@est.una.ac.cr"
+    affiliation: "Universidad Nacional de Costa Rica"
+version: 1.0.0
+date-released: 2026-11-13
+abstract: "Code, frozen configuration, derived features, out-of-fold predictions, and manuscript for the internal INbreast evaluation of DART-MC."
+keywords:
+  - adaptive thresholding
+  - mammography
+  - microcalcifications
+  - INbreast
+  - reproducible research
+preferred-citation:
+  type: article
+  title: "DART-MC: An Image-Adaptive Thresholding Proposal for Mammographic Microcalcification Classification"
+  authors:
+    - family-names: "Villalobos Murillo"
+      given-names: "Johnny"
+    - family-names: "Herrera Alfaro"
+      given-names: "Jurgen"
+  year: 2026
+

@@ -1,0 +1,25 @@
+name: build-and-audit
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Compile C++ extractor
+        shell: powershell
+        run: .\scripts\build_h010_threshold_features.ps1
+      - name: Check Python syntax
+        shell: powershell
+        run: python -m compileall -q scripts
+      - name: Audit repository contents
+        shell: powershell
+        run: python .\scripts\verify_release.py
+

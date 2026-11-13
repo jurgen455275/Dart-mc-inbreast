@@ -1,0 +1,67 @@
+{
+  "experiment_id": "INB-H010-THRESHOLD-COMP01",
+  "status": "preregistered",
+  "date": "2026-11-12",
+  "hypothesis_id": "H-INB-010",
+  "hypothesis": "With RawNorm, identical candidate processing, identical 23 image features, and identical grouped nested validation, the preserved DART-MC threshold is a viable alternative to classical global and local thresholding rules for image-level microcalcification classification.",
+  "dataset": "INbreast",
+  "images_expected": 327,
+  "test_v7_quarantined": true,
+  "patient_identity_available": false,
+  "grouping": {
+    "field": "subject_surrogate",
+    "meaning": "filename token that keeps related acquisitions together",
+    "limitation": "not a verified PatientID; patient-level validation is not claimed"
+  },
+  "representation": "RawNorm percentiles 0.5 and 99.5 inside the inherited breast mask",
+  "dart_threshold_invariant": "T=min(0.95,mean_M(D)+20*std_M(D)); D>T",
+  "methods": {
+    "0": "DART-MC",
+    "3": "Fixed D 0.15",
+    "10": "Otsu",
+    "15": "Percentile 0.9999",
+    "24": "Niblack local",
+    "25": "Sauvola local",
+    "26": "Kapur entropy",
+    "27": "Kittler-Illingworth",
+    "28": "Ridler-Calvard"
+  },
+  "shared_pipeline": [
+    "same RawNorm input",
+    "same inherited breast and physical analysis masks",
+    "same isotropy-energy map D",
+    "same strict greater-than threshold comparison",
+    "same 8-connected component formation and physical area limits",
+    "same candidate evidence filters",
+    "same 23 aggregate image features",
+    "same class-balanced L2 logistic family and hyperparameter grid",
+    "same grouped 5x4 nested validation"
+  ],
+  "feature_sets": {
+    "simplified_9": [
+      "adaptive_threshold", "raw_density_log", "accepted_density_log",
+      "score_max", "contrast_max", "dog_max", "cluster_count_log",
+      "accept_fraction", "evidence_max"
+    ],
+    "full_23": [
+      "adaptive_threshold", "raw_density_log", "accepted_density_log",
+      "score_max", "score_mean", "dog_max", "dog_mean", "contrast_max",
+      "contrast_mean", "compactness_max", "compactness_mean",
+      "cluster_support", "cluster_count_log", "accept_fraction", "score_gap",
+      "x_mean", "y_mean", "x_std", "y_std", "border_mean", "evidence_max",
+      "area_max_log", "area_mean_log"
+    ]
+  },
+  "regularization_grid": [0.01, 0.1, 1.0, 10.0],
+  "primary_metric": "balanced_accuracy",
+  "secondary_metrics": ["sensitivity", "specificity", "f1", "mcc"],
+  "validation": {
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "selection": "maximize pooled inner out-of-fold balanced accuracy with the H009 tie rules",
+    "paired_inference": "exact McNemar and subject-surrogate cluster bootstrap",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261112
+  },
+  "interpretation": "Internal method comparison only. No clinical, patient-level, or external generalization claim is permitted."
+}

@@ -1,0 +1,68 @@
+{
+  "status": "frozen_for_future_external_validation",
+  "performance_note": "The full-data fit is not evaluated on its training data. Reported performance comes exclusively from the nested out-of-fold experiment.",
+  "threshold_formula_invariant": "T=min(0.95,mean_M(D)+20*std_M(D)); D>T",
+  "family": "simplified_9",
+  "features": [
+    "adaptive_threshold",
+    "raw_density_log",
+    "accepted_density_log",
+    "score_max",
+    "contrast_max",
+    "dog_max",
+    "cluster_count_log",
+    "accept_fraction",
+    "evidence_max"
+  ],
+  "regularization": 0.01,
+  "decision_threshold": 0.4269318643609573,
+  "selection_oof_metrics": {
+    "tp": 213,
+    "tn": 52,
+    "fp": 17,
+    "fn": 45,
+    "sensitivity": 0.8255813953488372,
+    "specificity": 0.7536231884057971,
+    "balanced_accuracy": 0.7896022918773171,
+    "accuracy": 0.8103975535168195,
+    "precision": 0.9260869565217391,
+    "npv": 0.5360824742268041,
+    "f1": 0.8729508196721312,
+    "mcc": 0.5173882997911977
+  },
+  "training_images": 327,
+  "feature_mean": [
+    0.3881941488088037,
+    0.43510424833717753,
+    0.31827058166420275,
+    0.8163107032960683,
+    2.5342658809182224,
+    27.958772564835265,
+    1.3468630561857249,
+    0.6272138879210634,
+    0.6700593085967816
+  ],
+  "feature_scale": [
+    0.2351126027208085,
+    0.45421908250731524,
+    0.34565489004298283,
+    0.34070913988555396,
+    1.500677395094989,
+    16.99818237764748,
+    0.8342191460430523,
+    0.3531521505728601,
+    0.30252222805147405
+  ],
+  "intercept": 0.9102393012097583,
+  "coefficients_standardized": [
+    -0.7245637819161509,
+    0.23723022395069207,
+    0.20098819572022877,
+    0.16348846009146373,
+    -0.2705291535509156,
+    0.8218291831776228,
+    0.7238990198975407,
+    -0.3983796898557586,
+    -0.1664706933737104
+  ]
+}
