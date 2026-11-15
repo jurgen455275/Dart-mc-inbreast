@@ -20,6 +20,8 @@ python -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 powershell -ExecutionPolicy Bypass -File .\scripts\build_h010_threshold_features.ps1
+python .\scripts\verify_release.py
+python .\scripts\verify_manifest.py
 ```
 
 ## 4. Extracción de características
@@ -50,13 +52,16 @@ Resultados principales esperados:
 
 Los hashes y parámetros completos están en los archivos JSON de auditoría y resumen.
 
-## 6. Manuscrito
+## 6. Figuras y manuscrito candidato EMBC 2027
 
 ```powershell
-python .\scripts\crear_articulo_ieee_h010.py
+python .\scripts\crear_figuras_embc2027_h010.py
+python .\scripts\crear_articulo_embc2027_h010.py
 ```
 
-La salida es `docs/DART_MC_IEEE_Generic_H010_2026_FINAL.docx` en esta entrega. El manuscrito debe migrarse a la plantilla oficial de la revista o conferencia escogida antes del envío.
+Las figuras se guardan en `docs/figures/embc2027/`. La salida editable es `docs/DART_MC_EMBC_2027_SUBMISSION_CANDIDATE_H010.docx`. El PDF incluido fue exportado con Microsoft Word y revisado visualmente en sus cinco páginas. El documento debe migrarse a la plantilla oficial descargada desde el portal EMBC 2027 y volver a exportarse antes del envío.
+
+La construcción del manuscrito toma las cifras desde los CSV y JSON archivados; no vuelve a entrenar ni altera H010. El informe contiene una auditoría descriptiva del umbral: T mínimo 0.023, mediana 0.325, máximo 0.95 y activación del tope en 13 imágenes. Estos datos son post hoc y no se presentan como ajuste del algoritmo.
 
 ## 7. Modelo congelado
 

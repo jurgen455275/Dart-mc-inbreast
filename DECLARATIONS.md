@@ -11,7 +11,7 @@ Laboratorio de Procesamiento de Imágenes Digitales (LAPID), Universidad Naciona
 - Johnny Villalobos Murillo: `johnny.villalobos.murillo@una.ac.cr`
 - Jurgen Herrera Alfaro: `jurgen.herrera.alfaro@est.una.ac.cr`
 
-El autor de correspondencia todavía debe designarse en el sistema de la sede.
+Autor de correspondencia: Johnny Villalobos Murillo (`johnny.villalobos.murillo@una.ac.cr`). Esta designación debe repetirse en el sistema de envío.
 
 ## Financiación
 
@@ -34,4 +34,12 @@ El estudio es un análisis secundario retrospectivo de INbreast. No consta en lo
 Las imágenes de INbreast no se redistribuyen. El código, la configuración congelada, las particiones técnicas, las características derivadas y las predicciones por imagen están incluidos. Los usuarios deben obtener el dataset por la vía autorizada y suministrar su ruta local.
 
 No se dispuso de PatientID verificado. `subject_surrogate` es un agrupador técnico derivado del nombre de archivo y no debe presentarse como identidad de paciente.
+
+## Uso de inteligencia artificial
+
+Texto incluido en el manuscrito candidato, que ambos autores deben revisar y confirmar:
+
+> OpenAI Codex assisted with code review, analysis scripting, figure preparation, language editing, and drafting portions of the manuscript. Numerical statements were linked to repository artifacts; the authors retain responsibility for final verification and the submitted text.
+
+La declaración debe conservarse o ajustarse a la política vigente de la sede. No debe eliminarse si sigue describiendo el trabajo realizado.
 

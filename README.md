@@ -25,7 +25,7 @@ DART-MC mostró la mayor especificidad entre los métodos principales, pero Kapu
 - `scripts/`: compilación, extracción, validación y generación del manuscrito.
 - `experiments/`: configuración preespecificada y particiones congeladas.
 - `results/`: características, predicciones fuera de muestra, métricas y modelos congelados.
-- `docs/`: artículo IEEE genérico y guía de envío.
+- `docs/`: manuscrito candidato para IEEE EMBC 2027, versión editable, PDF verificado, figuras y guías de envío.
 - `data/`: instrucciones para obtener INbreast; las mamografías no se redistribuyen.
 - `REPRODUCIBILITY.md`: reproducción paso a paso y resultados esperados.
 - `DECLARATIONS.md`: financiación, autoría, conflictos, ética y disponibilidad.
@@ -51,10 +51,17 @@ Para repetir la extracción se necesita una copia autorizada de INbreast:
 python .\scripts\extraer_caracteristicas_h010_comparadores.py `
   --dataset-root "C:\ruta\INbreast Release 1.0" --workers 2
 python .\scripts\entrenar_h010_comparadores_anidados.py
-python .\scripts\crear_articulo_ieee_h010.py
+python .\scripts\crear_figuras_embc2027_h010.py
+python .\scripts\crear_articulo_embc2027_h010.py
 ```
 
 La evaluación estadística y el manuscrito pueden regenerarse directamente desde los resultados incluidos, sin redistribuir las imágenes.
+
+## Manuscrito candidato EMBC 2027
+
+La entrega incluye `docs/DART_MC_EMBC_2027_SUBMISSION_CANDIDATE_H010.docx` y su PDF de cinco páginas revisado visualmente. Sigue la estructura 4+1 anunciada por EMBC 2027: cuatro páginas de contenido técnico y una quinta página de agradecimientos y referencias. Presenta H010 como propuesta reproducible con evidencia interna, no como sistema clínicamente validado ni como método superior.
+
+La guía operativa está en `docs/GUIA_ENVIO_EMBC_2027.md` y el estado de preparación en `docs/EMBC_2027_READINESS.md`. Antes de enviar debe sustituirse el estilo generado por la plantilla oficial disponible en el portal y volver a comprobar página por página.
 
 ## Autores y afiliación
 
@@ -62,6 +69,8 @@ La evaluación estadística y el manuscrito pueden regenerarse directamente desd
 - Jurgen Herrera Alfaro — `jurgen.herrera.alfaro@est.una.ac.cr`
 
 Laboratorio de Procesamiento de Imágenes Digitales (LAPID), Universidad Nacional de Costa Rica.
+
+Johnny Villalobos Murillo es el autor de correspondencia.
 
 ## Financiación y conflictos
 

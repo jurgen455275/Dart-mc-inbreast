@@ -22,4 +22,7 @@ jobs:
       - name: Audit repository contents
         shell: powershell
         run: python .\scripts\verify_release.py
+      - name: Verify published hashes
+        shell: powershell
+        run: python .\scripts\verify_manifest.py
 
